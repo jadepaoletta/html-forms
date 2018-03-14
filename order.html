@@ -1,0 +1,76 @@
+<! doctype html>
+<html>
+<head>
+    <title>Ubermelon Order Form -- SO COOL</title>
+</head>
+<body>
+    <h1>ORDER!</h1>
+    <h3>Prices</h3>
+    <table>
+        <tr>
+            <th>Melon Name</th>
+            <th>Price per LB</th>
+        </tr>
+        <tr>
+            <td>Watermelon</td>
+            <td>$1.59</td>
+        </tr>
+        <tr>
+            <td>Honeydew</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+            <td>Canteloupe</td>
+            <td>$1.29</td>
+        </tr>
+        <tr>
+            <td>Crenshaw</td>
+            <td>42.19</td>
+        </tr>
+        <tr>
+            <td>Canary</td>
+            <td>$11.99</td>
+        </tr>
+    </table>
+    <p>Place your orders here! You know you want to (;</p>
+    <div>
+        <form action="https://ubermelon-order-form.herokuapp.com/process" method="post">
+            First Name: <input type="text" name="firstname">
+            <br>
+            Last Name: <input type="text" name="lastname">
+            <br>
+            MelonType <select name="melontype">
+                <option>Watermelon</option>
+                <option>Honeydew</option>
+                <option>Canteloupe</option>
+                <option>Crenshaw</option>
+                <option>Canary</option>
+            </select>
+            <br>
+            Quantity <input type="text" name="quantity">
+            <br>
+            Delivery Time
+                AM <input type="radio" name="time" value="AM">
+                PM <input type="radio" name="time" value="PM">
+                wat <input type="radio" name="time" value="wat"><br>
+            Returning Customer <br>
+                Yes <input type="radio" name="returning" value="yes">
+                No <input type="radio" name="returning" value="no">
+            <br>
+            <b>Statistics</b> <br>
+            <input type="checkbox" id="dog" name="stats" value="dog">
+                    <label for "dog">Dog</label>
+                <input type="checkbox" id="cat" name ="stats" value="cat">
+                    <label for "cat">Cat</label>
+                <input type="checkbox" id="hedgehog" name="stats" value="hedgehog">
+                    <label for "hedgehog">Hedgehog</label>
+                <input type="checkbox" id="Balloonicorn" name="stats" value="Balloonicorn">
+                    <label for "Balloonicorn">Balloonicorn</label>
+                <input type="checkbox" id="yak" name="stats" value="yak">
+                    <label for "yak">Yak</label>
+                <br>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
